@@ -1,0 +1,155 @@
+.booking-form_wrapper{
+    margin: 50px;
+    padding: 20px;
+    max-width: 900px;
+    width: 800px;
+    background-color: #FFFFFF;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.progress-wrapper{
+    z-index: 1000;
+    background-color: #000000;
+    opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rentform-container {
+    margin: 20px;
+}
+
+.grid-wrapper{
+    width: 100%;
+    margin-bottom: 28px;
+    flex-grow: 1;
+}
+
+.label-form{
+    color: #4DA8DA;
+}
+
+.form-inputField{
+    width: 100%;
+}
+
+.wrapper-returnForm{
+    width: 100%;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.btn-payment{
+    background-color: #4DA8DA;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn-payment:hover{
+    background-color: #3B7B9E;
+    transition: 3ms ease-in-out;
+}
+
+.rentform-returncontainer{
+    width: 100%;
+}
+
+.confirmation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #4A934A;
+}
+
+
+/* PaymentProof */
+.countdown{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #4DA8DA;
+    margin-bottom: 25px;
+}
+
+.countdown-timer{    
+    display: flex;
+    justify-content: center;
+}
+
+.timer-wrapper{
+    width: 60px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-upload{
+    height: 300px;
+    position: relative;
+    width: 60%;
+    border: 2px dashed #4DA8DA;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    color: #4DA8DA;
+    
+}
+
+input[type="file"]{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+}
+
+.btn-upload{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-upload > .icon {
+    font-size: 2000px;
+}
+
+.image-upload > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.custom-btn{
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #4DA8DA;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 20px;
+}

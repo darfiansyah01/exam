@@ -1,0 +1,321 @@
+.container-dashboard{
+    display: flex;
+}
+/*Sidebar*/
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: #434343;
+    color: #FFFFFF;
+    position: fixed;
+    transition: all 0.5s ease;    
+}
+.sidebar.active {
+    width: 80px;
+}
+.sidebar > img{
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 20px;
+    opacity: 1;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transition-delay: 0.1s;
+}
+.sidebar.active > img{
+    opacity: 0;
+    pointer-events: none;
+    transition-delay: 0;
+}
+.sidebar .toggle-btn{
+    position: absolute;
+    right: 8px;
+    top: 26px;
+    left: 85%;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.sidebar.active .toggle-btn{
+    left: 30%;
+}
+.sidebar .nav-lists{    
+    width: 100%;
+    padding: 0;
+    overflow: auto;
+    width: 100%;
+    margin-top: 30px;
+}
+.sidebar .nav-lists::-webkit-scrollbar{
+    display: none;
+}
+.sidebar .nav-lists li{
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    margin-left: 20px;
+    border-radius: 5px 0 0 5px;
+}
+.sidebar .nav-lists li:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.sidebar .nav-lists li .nav-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.sidebar .nav-lists li .nav-link .arrow{
+    background-color: #818181;
+    border-radius: 50%;
+}
+.sidebar.active .nav-lists li .nav-link{
+    padding: 12px 0;
+    margin: 0;
+}
+.sidebar .nav-lists li .nav-link .nav-link-title{
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.sidebar.active .nav-lists li .nav-link .nav-link-title{
+    display: none;
+}
+.sidebar.active .nav-lists li .nav-link .arrow{
+    display: none;
+}
+.sidebar .nav-lists li.showMenu .nav-link .arrow{
+    transform: rotate(-180deg);
+}
+.sidebar .nav-lists li .sub-menu{
+   margin: 0; 
+   padding: 0;
+   display: none;
+}
+.sidebar .nav-lists li.showMenu  .sub-menu{
+    display: block;
+ }
+.sidebar .nav-lists li .sub-menu li{
+    margin-left: 60px; 
+    padding: 0;
+ }
+.sidebar .nav-lists li .sub-menu p{    
+  font-size: 14px;
+  padding: 14px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin: 0;
+}
+.sidebar .nav-lists li .sub-menu p:hover{    
+    opacity: 1;
+}
+.sidebar.active .nav-lists li .sub-menu{
+    position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 1;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+  z-index: 10000;
+}
+
+/*content*/
+.content-wrapper{
+    width: calc(100% - 240px);
+    position: relative;
+    left: 240px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active ~ .content-wrapper {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+/*Navbar*/
+.admin-navbar{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #434343;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/*DashboardContent*/
+.admin-detail-transaction-section{
+    padding: 20px;
+}
+
+.admin-detail-transaction-user{
+    padding: 20px;
+    border: 1px solid #4DA8DA;
+    border-radius: 5px;
+}
+
+.admin-detail-transaction-table{
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.admin-detail-transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.profile-image-store-grid {
+    background-color: #FFFFFF;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px;
+    border-radius: 3px;
+    height:360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image-store-grid > img {
+    width: 60%;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    color: #4DA8DA;
+    margin-bottom: 20px;
+}
+
+.profile-detail-store-grid{
+    background-color: #FFFFFF;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 8px 20px;
+    border-radius: 3px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail-transaction{
+    width: 22%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 12px;
+}
+
+.detail-transaction-text{
+    flex: 1;
+    margin-left: 12px;
+}
+
+.detail-transaction-text > p, h3 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.progress-loading{
+    z-index: 1000;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-list-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    color: #FFFFFF;
+    background-color: #77BB75;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-dashboard:hover{
+    background-color: #ade9ab;
+}
+
+
+
+/* Table Filter */
+.table-filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.table-filter-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.table-pagination{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top: 12px;
+}
+
+.table-pagination-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-pagination-text > p {
+    font-size: 12px;
+    margin: 0 6px;
+}
+
+.table-pagination-text > strong {
+    font-size: 14px;
+}
+
+.table-filter-search > label{
+    margin-left: 20px;
+    margin-right: 15px;
+    width: inherit;
+    font-size: 12px;
+}

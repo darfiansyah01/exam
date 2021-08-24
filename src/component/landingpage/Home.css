@@ -1,0 +1,254 @@
+.container-home{
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.container-wrap-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 200px;
+    min-width: 120px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.image-wrapper-card{
+    border-radius: 5px 5px 0 0;
+    width: 180px;
+    height: 120px;
+    padding: 10px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.item-tag-wrap{
+    position: absolute;
+    background-color: #F2BABA;
+    padding: 6px 16px;
+    border-radius: 3px 0 0 0;
+    font-size: 12px;
+}
+
+.item-tag-wrap > p {
+    margin: 0;
+    font-size: 10px;
+}
+
+.image-product{
+    width: 70%;
+    object-fit: contain;
+}
+
+.product-title{        
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.6em;
+  line-height: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.product-store-name{
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 0;
+    color: red;
+}
+
+.product-price{
+    display: block;/* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+    line-height: 1.8em;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.productCard-btn  {
+    width: 100%;    
+    border-radius: 0 0 5px 5px;
+    border: none;
+    outline: none;
+    font-size: 10px;
+    padding: 12px 0;
+    background-color: #4DA8DA;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.productCard-btn:hover  {
+    background-color: #78caf6;
+}
+
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #4DA8DA;    
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-wrapper{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.logo {
+    width: 120px;
+    height: 28px;
+}
+
+.nav-link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.nav-list:hover{
+    color: #f86d6d;
+}
+
+.nav-option{
+    display: flex;
+    align-items: center;
+}
+
+.nav-option-user{
+    display: flex;
+    align-items: center;
+}
+
+.nav-option-user > p{
+    width: 100px;
+    font-size: 12px;
+    margin-left: 8px;
+}
+
+.navbar-btn{
+    padding: 6px 16px;
+    font-size: 12px;
+    background-color: #F2BABA;
+    color: #FFFFFF;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-btn:hover{
+    background-color: #f86d6d;
+}
+
+
+/*Filter */
+.filter-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-option{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.search-option > input{
+    flex: 1;
+    background-color: #B9DDF1;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.btn-search{
+    padding: 8px 12px;
+    font-size: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-search:hover{
+    background-color: #F2BABA;
+    color: #FFFFFF;
+}
+
+.spacing-line{
+    width: 2px ;
+    margin: 0 14px;
+    height: 28px;
+    border: none;
+    background-color: #B9DDF1;
+}
+
+.sort-option{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.sort-option > Label {
+    font-size: 12px;
+    margin-right: 6px;
+}
+
+.sort-option > select {
+    padding: 8px 12px;
+    font-size: 10px;
+    border-radius: 2px;
+    border: 1px solid #B9DDF1;
+    outline: #B9DDF1;
+    cursor: pointer;
+}
+
+
+

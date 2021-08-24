@@ -1,0 +1,173 @@
+.addproduct-form_wrapper{
+    margin: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 1000px;
+    background-color: #FFFFFF;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.btn-test-wrapper{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-test{
+    padding: 10px 30px;
+    background-color: #4DA8DA;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addproduct-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.addproduct-wrapper-image{
+    max-height: 500px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    max-width: 500px;
+    border: 2px dashed #C2CDDA;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.addproduct-wrapper-image > img {
+    width: 80%;
+    object-fit: cover;
+}
+.addproduct-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addproduct-content > .icon {
+    font-size: 100px;
+    color: #4DA8DA;
+}
+
+.addproduct-content > .text {
+    font-size: 20px;
+    color: #4DA8DA;
+}
+
+.btn-addProduct{
+    width: 300px;
+    max-width: 500px;
+    padding: 10px;
+    background-color: #4DA8DA;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-addProduct:hover{
+    transition: 0.5s ease-in-out;
+    background-color: rgb(160, 217, 250);
+}
+
+
+.addproduct-detail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.form-addproduct{
+    width: 60%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    padding: 14px;
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-updateproduct{
+    width: 40%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    padding: 14px;
+    border-radius: 5px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.btn-addProduct-detail{
+    padding: 10px;
+    background-color: #4DA8DA;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*.addproduct-image position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+.addproduct-wrapper-image > .file-name{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(135deg, #3A8FFE 0%, #9685FE 100%);
+    padding: 8px 0;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.addproduct-wrapper > #custom-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #3A8FFE 0%, #9685FE 100%);
+    height: 30px;
+    display: block;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-btn{
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #4DA8DA;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 20px;
+}*/

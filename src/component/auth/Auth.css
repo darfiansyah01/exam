@@ -1,0 +1,38 @@
+.container-wrap-form{
+    margin: 50px;
+    padding: 20px;
+    max-width: 50%;
+    width: 40%;
+    background-color: #FFFFFF;        
+    border: 1px solid #4DA8DA;
+    border-radius: 5px;
+}
+
+.form-btn{
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 2px;
+    border: 1px solid #4DA8DA;
+    outline: none;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 6px;
+    transition: all 0.3s ease-in;
+}
+
+.form-btn:hover{
+    background-color: #4DA8DA;
+    color: #FFFFFF;
+}
+
+.auth-btn{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+.auth-btn:hover{
+    color: #903749;
+}
